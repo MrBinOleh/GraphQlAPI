@@ -14,11 +14,11 @@ namespace TryGraphQL.GraphQL.Types
 
             descriptor
                 .Field(p => p.Platform)
-                .ResolveWith<PlatformResolver>(p => p.GetPlatform(default!, default!))
+                .ResolveWith<Resolver>(p => p.GetPlatform(default!, default!))
                 .UseDbContext<AppDbContext>();
         }
         
-        private class PlatformResolver
+        private class Resolver
         {
             public Platform GetPlatform(Command command, [ScopedService] AppDbContext dbContext)
             {

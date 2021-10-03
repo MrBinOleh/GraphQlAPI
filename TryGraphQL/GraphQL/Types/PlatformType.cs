@@ -16,11 +16,11 @@ namespace TryGraphQL.GraphQL.Types
 
             descriptor
                 .Field(p => p.Commands)
-                .ResolveWith<CommandResolver>(p => p.GetCommands(default!, default!))
+                .ResolveWith<Resolver>(p => p.GetCommands(default!, default!))
                 .UseDbContext<AppDbContext>();
         }
         
-        private class CommandResolver
+        private class Resolver
         {
             public IQueryable<Command> GetCommands(Platform platform, [ScopedService] AppDbContext dbContext)
             {
