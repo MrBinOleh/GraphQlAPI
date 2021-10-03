@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryGraphQL", "TryGraphQL\TryGraphQL.csproj", "{BFA3DDCB-F3C0-4D5E-8C79-81344A611544}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommanderGQL", "..\S04E01---.NET-5-GraphQL-API-main\CommanderGQL.csproj", "{183CD062-C72D-48F0-AFA7-4E2D1FCB82D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommanderGQL", "GraphQL-API-main\CommanderGQL.csproj", "{73887FAA-C5BC-42E5-95F6-2A1DB7070E5E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{BFA3DDCB-F3C0-4D5E-8C79-81344A611544}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BFA3DDCB-F3C0-4D5E-8C79-81344A611544}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BFA3DDCB-F3C0-4D5E-8C79-81344A611544}.Release|Any CPU.Build.0 = Release|Any CPU
-		{183CD062-C72D-48F0-AFA7-4E2D1FCB82D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{183CD062-C72D-48F0-AFA7-4E2D1FCB82D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{183CD062-C72D-48F0-AFA7-4E2D1FCB82D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{183CD062-C72D-48F0-AFA7-4E2D1FCB82D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73887FAA-C5BC-42E5-95F6-2A1DB7070E5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73887FAA-C5BC-42E5-95F6-2A1DB7070E5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73887FAA-C5BC-42E5-95F6-2A1DB7070E5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73887FAA-C5BC-42E5-95F6-2A1DB7070E5E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
