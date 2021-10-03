@@ -4,7 +4,7 @@ using HotChocolate.Types;
 using TryGraphQL.Data;
 using TryGraphQL.Models;
 
-namespace TryGraphQL.GraphQL.Types
+namespace TryGraphQL.GraphQL.Commands
 {
     public class CommandType : ObjectType<Command>
     {
@@ -14,11 +14,11 @@ namespace TryGraphQL.GraphQL.Types
 
             descriptor
                 .Field(p => p.Platform)
-                .ResolveWith<Resolver>(p => p.GetPlatform(default!, default!))
+                .ResolveWith<Resolvers>(p => p.GetPlatform(default!, default!))
                 .UseDbContext<AppDbContext>();
         }
         
-        private class Resolver
+        private class Resolvers
         {
             public Platform GetPlatform(Command command, [ScopedService] AppDbContext dbContext)
             {

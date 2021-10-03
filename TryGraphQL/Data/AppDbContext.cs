@@ -20,7 +20,7 @@ namespace TryGraphQL.Data
             modelBuilder
                 .Entity<Platform>()
                 .HasMany(p => p.Commands)
-                .WithOne(p => p.Platform)
+                .WithOne(p => p.Platform!)
                 .HasForeignKey(p => p.PlatformId);
 
             modelBuilder

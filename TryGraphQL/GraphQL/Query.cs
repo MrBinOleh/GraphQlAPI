@@ -10,14 +10,14 @@ namespace TryGraphQL.GraphQL
     {
         [UseDbContext(typeof(AppDbContext))]
         //[UseProjection]
-        public IQueryable<Platform> GetPlatforms([ScopedService] AppDbContext dbContext)
+        public IQueryable<Platform> GetPlatform([ScopedService] AppDbContext dbContext)
         {
             return dbContext.Platforms;
         }
         
         [UseDbContext(typeof(AppDbContext))]
         //[UseProjection]
-        public IQueryable<Command> GetCommands([ScopedService] AppDbContext dbContext)
+        public IQueryable<Command> GetCommand([ScopedService] AppDbContext dbContext)
         {
             return dbContext.Commands;
         }

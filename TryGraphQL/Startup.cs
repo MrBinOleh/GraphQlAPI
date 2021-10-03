@@ -7,7 +7,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TryGraphQL.Data;
 using TryGraphQL.GraphQL;
-using TryGraphQL.GraphQL.Types;
+using TryGraphQL.GraphQL.Commands;
+using TryGraphQL.GraphQL.Platforms;
 
 namespace TryGraphQL
 {
